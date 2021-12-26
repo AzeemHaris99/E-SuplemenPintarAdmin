@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:paddingHorizontal="30dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        android:background="@drawable/logo_admin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="E-Suplemen Pintar"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:fontFamily="@font/asap"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="(Admin)"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:fontFamily="@font/asap"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Log Masuk"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:fontFamily="@font/asap"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Emel"
+            android:fontFamily="@font/asap"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangular_field"/>
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/email_button"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Kata Laluan"
+            android:fontFamily="@font/asap"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:paddingLeft="60dp"
+            android:background="@drawable/rectangular_field"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/password_button"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forgotpasswordTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/asap"
+        android:text="Lupa Kata Laluan"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:text="Log Masuk"
+        android:textSize="20dp"
+        android:fontFamily="@font/asap"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_logoutbutton"
+        android:textAllCaps="false"/>
+</LinearLayout>
